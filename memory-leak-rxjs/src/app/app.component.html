@@ -1,0 +1,10 @@
+<div style="text-align: center">
+  <h1>Angular Nested Subscription Memory Leak</h1>
+  <button (click)="toggleLeaky()">
+    {{ showLeaky ? "Hide" : "Show" }} Leaky Component
+  </button>
+</div>
+
+<hr />
+
+<app-leaky *ngIf="showLeaky"></app-leaky>

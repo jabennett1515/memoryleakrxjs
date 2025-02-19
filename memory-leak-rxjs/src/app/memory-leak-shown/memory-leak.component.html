@@ -1,0 +1,7 @@
+<div class="container">
+  <h2>Leaky Component: Nested Subscriptions</h2>
+  <p>
+    This component uses an outer interval, which spawns a new inner interval
+    each time it fires. If you don't unsubscribe from both, you'll leak memory.
+  </p>
+</div>
